@@ -1,6 +1,6 @@
 baseURL = 'https://example.org/'
-languageCode = "en-us"
-title = 'Царска Власт'
+languageCode = "bg"
+title = 'Царската идеология през Древността'
 # If you installed the theme via Hugo Modules, you may remove this key
 # theme = "hugo-neso"
 
@@ -59,28 +59,48 @@ title = 'Царска Власт'
 
 [menus]  # The `menus` table lives at the top level of TOML
   [[menus.main]]
-    identifier = "posts"   # unique id
-    name       = "Posts"   # text shown in the menu
-    pageRef    = "/posts"  # your content section
+    identifier = "news"   # unique id
+    name       = "Новини"   # text shown in the menu
+    pageRef    = "/news"  # your content section
     weight     = 10        # order (smaller appears earlier)
+
+  # [[menus.main]]
+  #   identifier = "about"
+  #   name       = "За нас"
+  #   pageRef    = "#"   # your taxonomy: tags, categories, etc.
+  #   weight     = 15
+
+  [[menus.main]]
+    # parent     = "about"
+    identifier = "team"
+    name       = "Екип"
+    pageRef    = "/team"   # your taxonomy: tags, categories, etc.
+    weight     = 15
+
+  [[menus.main]]
+    identifier = "about_project"
+    name       = "За проекта"
+    pageRef    = "/project"   # your taxonomy: tags, categories, etc.
+    weight     = 17
+
   [[menus.main]]
     identifier = "tags"
-    name       = "Tags"
+    name       = "Eтикети"
     pageRef    = "/tags"   # your taxonomy: tags, categories, etc.
     weight     = 20
-  [[menus.main]]
-    identifier = "categories"
-    name       = "Categories"
-    pageRef    = "/categories"  # your taxonomy: tags, categories, etc.
-    weight     = 30
+  # [[menus.main]]
+  #   identifier = "categories"
+  #   name       = "Categories"
+  #   pageRef    = "/categories"  # your taxonomy: tags, categories, etc.
+  #   weight     = 30
   [[menus.main]]
     identifier = "archives"
-    name       = "Archives"
+    name       = "📂"
     pageRef    = "/archives"  # archives page
     weight     = 40
   [[menus.main]]
     identifier = "search"
-    name       = "Търсене"
+    name       = "🔍"
     pageRef    = "/search"  # search page
     weight     = 50
   # [[menus.main]]
@@ -88,3 +108,12 @@ title = 'Царска Власт'
   #   name       = "GitHub"
   #   url        = "https://github.com/babeneso"  # external link
   #   weight     = 60
+
+
+[params]
+  [params.neso]
+    show_breadcrumbs = true
+    [params.neso.home]
+      display_mode = "profile"
+      [params.neso.home.list]
+        featured_entries_limit = 3
