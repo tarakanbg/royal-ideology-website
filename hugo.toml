@@ -1,6 +1,12 @@
 baseURL = 'https://example.org/'
-locale = 'en-us'
+languageCode = "en-us"
 title = 'Царска Власт'
+# If you installed the theme via Hugo Modules, you may remove this key
+# theme = "hugo-neso"
+
+[minify]
+  # Recommended: minify the generated output to improve page load time
+  minifyOutput = true
 
 [build]
   [build.buildStats]
@@ -21,3 +27,64 @@ title = 'Царска Власт'
     disableWatch = true
     source = 'hugo_stats.json'
     target = 'assets/notwatching/hugo_stats.json'
+
+# Markdown
+# --------------------------------
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.parser]
+      # Recommended: do not wrap <img> in <p> (the theme provides proper spacing)
+      wrapStandAloneImageWithinParagraph = false
+
+      [markup.goldmark.parser.attribute]
+        # Required: enable attributes on block elements
+        block = true
+
+    [markup.goldmark.renderer]
+      # Recommended: allow raw HTML in Markdown
+      unsafe = true
+
+  [markup.highlight]
+    # Required: use CSS classes for code blocks so syntax highlighting works
+    noClasses = false
+
+  # Recommended: table of contents levels
+  [markup.tableOfContents]
+    startLevel = 2
+    endLevel = 3
+
+[outputs]  # The `outputs` table lives at the top level of TOML
+  home = ["html", "rss", "json"]  # Ask Hugo to emit a JSON index
+
+[menus]  # The `menus` table lives at the top level of TOML
+  [[menus.main]]
+    identifier = "posts"   # unique id
+    name       = "Posts"   # text shown in the menu
+    pageRef    = "/posts"  # your content section
+    weight     = 10        # order (smaller appears earlier)
+  [[menus.main]]
+    identifier = "tags"
+    name       = "Tags"
+    pageRef    = "/tags"   # your taxonomy: tags, categories, etc.
+    weight     = 20
+  [[menus.main]]
+    identifier = "categories"
+    name       = "Categories"
+    pageRef    = "/categories"  # your taxonomy: tags, categories, etc.
+    weight     = 30
+  [[menus.main]]
+    identifier = "archives"
+    name       = "Archives"
+    pageRef    = "/archives"  # archives page
+    weight     = 40
+  [[menus.main]]
+    identifier = "search"
+    name       = "Търсене"
+    pageRef    = "/search"  # search page
+    weight     = 50
+  # [[menus.main]]
+  #   identifier = "github"
+  #   name       = "GitHub"
+  #   url        = "https://github.com/babeneso"  # external link
+  #   weight     = 60

@@ -11,3 +11,5 @@ hugo.linux
 
 # Node modules
 node_modules/
+
+.DS_Store
