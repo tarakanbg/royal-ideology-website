@@ -114,6 +114,6 @@ title = 'Царската идеология през Древността'
   [params.neso]
     show_breadcrumbs = true
     [params.neso.home]
-      display_mode = "profile"
+      display_mode = "intro"
       [params.neso.home.list]
         featured_entries_limit = 3

@@ -36,7 +36,7 @@ entry_link_aria:
   other: "Read “{{ .Title }}”"
 
 feature_entries:
-  other: "Препоръчани публикации"
+  other: "Последни публикации"
 
 heading_link_label:
   other: "Link to this section"
