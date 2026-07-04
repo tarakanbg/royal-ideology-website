@@ -130,7 +130,8 @@ mainSections = ["news"]
     [params.neso.branding]
       logo_text = "Moo"
       hide_logo_text = true
-      logo_image = "/static/logo.png"
-      logo_image_dark = "/static/logo_dark.png"
+      logo_image = "img/logo.png"
+      logo_image_dark = "img/logo_dark.png"
       logo_image_width = "220"
       logo_image_height = "90"
+      og_image = "posts/about-us/project.jpg"
