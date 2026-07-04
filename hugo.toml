@@ -95,7 +95,8 @@ title = 'Царската идеология през Древността'
   #   weight     = 30
   [[menus.main]]
     identifier = "archives"
-    name       = "📂"
+    # name       = "📂"
+    name       = "Архив"
     pageRef    = "/archives"  # archives page
     weight     = 40
   [[menus.main]]
@@ -113,7 +114,16 @@ title = 'Царската идеология през Древността'
 [params]
   [params.neso]
     show_breadcrumbs = true
+
     [params.neso.home]
       display_mode = "intro"
       [params.neso.home.list]
         featured_entries_limit = 3
+
+    [params.neso.branding]
+      logo_text = "Moo"
+      hide_logo_text = true
+      logo_image = "/static/logo.png"
+      logo_image_dark = "/static/logo_dark.png"
+      logo_image_width = "220"
+      logo_image_height = "90"
