@@ -112,6 +112,13 @@ mainSections = ["news"]
 [params]
   [params.neso]
     show_breadcrumbs = true
+    time_format = "2 January, 2006"
+    ext_link_indicator = true
+    ext_link_new_window = true
+
+    [params.neso.page]
+      ext_link_indicator = true
+      ext_link_new_window = true
 
     [params.neso.home]
       display_mode = "profile"
