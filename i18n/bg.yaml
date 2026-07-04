@@ -67,7 +67,7 @@ share_btn_title:
   other: "Share on {{ .Provider }}"
 
 toc:
-  other: "Table of Contents"
+  other: "Съдържание"
 
 translations:
   other: "Translations:&nbsp;"

@@ -1,6 +1,7 @@
 baseURL = 'https://example.org/'
 languageCode = "bg"
 title = 'Царската идеология през Древността'
+cleanDestinationDir = true
 # If you installed the theme via Hugo Modules, you may remove this key
 # theme = "hugo-neso"
 
@@ -74,7 +75,7 @@ title = 'Царската идеология през Древността'
     # parent     = "about"
     identifier = "team"
     name       = "Екип"
-    pageRef    = "/team"   # your taxonomy: tags, categories, etc.
+    pageRef    = "/posts/team"   # your taxonomy: tags, categories, etc.
     weight     = 15
 
   [[menus.main]]
