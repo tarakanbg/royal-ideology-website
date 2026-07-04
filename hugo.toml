@@ -5,6 +5,8 @@ cleanDestinationDir = true
 # If you installed the theme via Hugo Modules, you may remove this key
 # theme = "hugo-neso"
 
+mainSections = ["news"]
+
 [minify]
   # Recommended: minify the generated output to improve page load time
   minifyOutput = true
@@ -65,11 +67,6 @@ cleanDestinationDir = true
     pageRef    = "/news"  # your content section
     weight     = 10        # order (smaller appears earlier)
 
-  # [[menus.main]]
-  #   identifier = "about"
-  #   name       = "За нас"
-  #   pageRef    = "#"   # your taxonomy: tags, categories, etc.
-  #   weight     = 15
 
   [[menus.main]]
     # parent     = "about"
@@ -81,7 +78,7 @@ cleanDestinationDir = true
   [[menus.main]]
     identifier = "about_project"
     name       = "За проекта"
-    pageRef    = "/project"   # your taxonomy: tags, categories, etc.
+    pageRef    = "/posts/about-us"   # your taxonomy: tags, categories, etc.
     weight     = 17
 
   [[menus.main]]
@@ -117,7 +114,16 @@ cleanDestinationDir = true
     show_breadcrumbs = true
 
     [params.neso.home]
-      display_mode = "intro"
+      display_mode = "profile"
+      [params.neso.home.profile]
+        # avatar_image = "img/profile-photo.jpg"
+        [[params.neso.home.profile.link_btns]]
+            label = "За проекта"
+            # url   = "https://example.com/resume"
+            url    = "/posts/about-us"
+        [[params.neso.home.profile.link_btns]]
+            label = "Екип"
+            url   = "/posts/team"
       [params.neso.home.list]
         featured_entries_limit = 3
 
