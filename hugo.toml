@@ -134,7 +134,6 @@ mainSections = ["news", "publications"]
         # avatar_image = "img/profile-photo.jpg"
         [[params.neso.home.profile.link_btns]]
             label = "За проекта"
-            # url   = "https://example.com/resume"
             url    = "/pages/about-us"
         [[params.neso.home.profile.link_btns]]
             label = "Екип"
