@@ -11,7 +11,7 @@ alert_tip:
   other: "Tip"
 
 alert_warning:
-  other: "Warning"
+  other: "Уточнение"
 
 author:
   one: "Author: "

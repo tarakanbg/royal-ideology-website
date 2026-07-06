@@ -5,7 +5,7 @@ cleanDestinationDir = true
 # If you installed the theme via Hugo Modules, you may remove this key
 # theme = "hugo-neso"
 
-mainSections = ["news"]
+mainSections = ["news", "publications"]
 
 [minify]
   # Recommended: minify the generated output to improve page load time
@@ -72,20 +72,26 @@ mainSections = ["news"]
     # parent     = "about"
     identifier = "team"
     name       = "Екип"
-    pageRef    = "/posts/team"   # your taxonomy: tags, categories, etc.
+    pageRef    = "/pages/team"   # your taxonomy: tags, categories, etc.
     weight     = 15
 
   [[menus.main]]
     identifier = "about_project"
     name       = "За проекта"
-    pageRef    = "/posts/about-us"   # your taxonomy: tags, categories, etc.
+    pageRef    = "/pages/about-us"   # your taxonomy: tags, categories, etc.
     weight     = 17
+
+  [[menus.main]]
+    identifier = "publications"
+    name       = "Публикации"
+    pageRef    = "/publications"   # your taxonomy: tags, categories, etc.
+    weight     = 20
 
   [[menus.main]]
     identifier = "tags"
     name       = "Eтикети"
     pageRef    = "/tags"   # your taxonomy: tags, categories, etc.
-    weight     = 20
+    weight     = 25
   # [[menus.main]]
   #   identifier = "categories"
   #   name       = "Categories"
@@ -119,6 +125,8 @@ mainSections = ["news"]
     [params.neso.page]
       ext_link_indicator = true
       ext_link_new_window = true
+      show_author = true
+      hide_metadata = false
 
     [params.neso.home]
       display_mode = "profile"
@@ -127,10 +135,10 @@ mainSections = ["news"]
         [[params.neso.home.profile.link_btns]]
             label = "За проекта"
             # url   = "https://example.com/resume"
-            url    = "/posts/about-us"
+            url    = "/pages/about-us"
         [[params.neso.home.profile.link_btns]]
             label = "Екип"
-            url   = "/posts/team"
+            url   = "/pages/team"
       [params.neso.home.list]
         featured_entries_limit = 3
 
@@ -141,4 +149,4 @@ mainSections = ["news"]
       logo_image_dark = "img/logo_dark.png"
       logo_image_width = "220"
       logo_image_height = "90"
-      og_image = "posts/about-us/project.jpg"
+      og_image = "pages/about-us/project.jpg"
