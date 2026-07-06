@@ -169,3 +169,6 @@ mainSections = ["news", "publications"]
       logo_image_width = "220"
       logo_image_height = "90"
       og_image = "pages/about-us/project.jpg"
+
+    [params.neso.search]
+      input_placeholder = "Въведете ключова дума или фраза..."
