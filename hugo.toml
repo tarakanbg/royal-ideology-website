@@ -88,8 +88,14 @@ mainSections = ["news", "publications"]
     weight     = 20
 
   [[menus.main]]
+    identifier = "gallery"
+    name       = "Галерия"
+    pageRef    = "/galleries"   # your taxonomy: tags, categories, etc.
+    weight     = 22
+
+  [[menus.main]]
     identifier = "tags"
-    name       = "Eтикети"
+    name       = "Категории"
     pageRef    = "/tags"   # your taxonomy: tags, categories, etc.
     weight     = 25
   # [[menus.main]]
