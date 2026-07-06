@@ -141,6 +141,20 @@ mainSections = ["news", "publications"]
       [params.neso.home.list]
         featured_entries_limit = 3
 
+    [params.neso.social]
+      [[params.neso.social.links]]
+        name = "Facebook"
+        url  = "https://www.facebook.com/profile.php?id=61574370416172"
+      [[params.neso.social.links]]
+        name = "Youtube"
+        url  = "https://youtube.com"
+      [[params.neso.social.links]]
+        name = "Github"
+        url  = "https://github.com/tarakanbg/royal-ideology-website"
+      # [[params.neso.social.links]]
+      #   name = "X"
+      #   url  = "https://x.com/babeneso"
+
     [params.neso.branding]
       logo_text = "Moo"
       hide_logo_text = true
