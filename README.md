@@ -7,4 +7,6 @@
 
 ![logo](/assets/img/fni_tansparent.png)
 
+URL: [https://royal-ideology-antiquity.netlify.app](https://royal-ideology-antiquity.netlify.app)
+
 __© Svilen Vasilev, 2026__
