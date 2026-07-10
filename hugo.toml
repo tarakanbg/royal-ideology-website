@@ -1,4 +1,4 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://royal-ideology-antiquity.netlify.app/'
 languageCode = "bg"
 title = 'Царската идеология през Древността'
 cleanDestinationDir = true
