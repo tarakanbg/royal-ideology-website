@@ -7,6 +7,6 @@
 
 ![logo](/assets/img/fni_tansparent.png)
 
-URL: [https://royal-ideology-antiquity.netlify.app](https://royal-ideology-antiquity.netlify.app)
+URL: [https://royal-ideology.egyptology-bg.com](https://royal-ideology.egyptology-bg.com)
 
 __© Svilen Vasilev, 2026__
