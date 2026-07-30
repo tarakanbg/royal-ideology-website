@@ -127,6 +127,7 @@ mainSections = ["news", "publications"]
     time_format = "2 January, 2006"
     ext_link_indicator = true
     ext_link_new_window = true
+    support_theme_author = false
 
     [params.neso.page]
       ext_link_indicator = true
@@ -153,7 +154,7 @@ mainSections = ["news", "publications"]
         url  = "https://www.facebook.com/profile.php?id=61574370416172"
       [[params.neso.social.links]]
         name = "Youtube"
-        url  = "https://youtube.com"
+        url  = "https://www.youtube.com/channel/UCIZkj13chK2yNOp_bg5JyqQ"
       [[params.neso.social.links]]
         name = "Github"
         url  = "https://github.com/tarakanbg/royal-ideology-website"
