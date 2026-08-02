@@ -1,7 +1,7 @@
 ---
 title           : "{{ .File.ContentBaseName | humanize | replaceRE `\s+` " " | title }}"
 date            : {{ .Date }}
-draft           : true
+draft           : false
 slug            : "{{ .File.ContentBaseName | urlize }}"  # slug (URL segment) for this post
 
 description     : "Enter the post description (a short SEO-friendly blurb)"
