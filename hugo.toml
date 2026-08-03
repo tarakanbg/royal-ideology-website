@@ -1,4 +1,4 @@
-baseURL = 'https://royal-ideology-antiquity.netlify.app/'
+baseURL = 'https://royal-ideology.egyptology-bg.com'
 languageCode = "bg"
 title = 'Царската идеология през Древността'
 cleanDestinationDir = true
@@ -169,7 +169,7 @@ mainSections = ["news", "publications"]
       logo_image_dark = "img/logo_dark.png"
       logo_image_width = "220"
       logo_image_height = "90"
-      og_image = "pages/about-us/project.jpg"
+      og_image = "img/project.jpg"
 
     [params.neso.search]
       input_placeholder = "Въведете ключова дума или фраза..."
